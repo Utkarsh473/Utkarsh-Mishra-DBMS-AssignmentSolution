@@ -70,7 +70,8 @@ GROUP BY (GENDER);
 -- 4. Find the minimum ticket price for Sleeper Bus.
 
 SELECT min(Price)
-FROM PRICE;
+FROM PRICE
+WHERE Bus_Type = 'Sleeper';
 
 -- 5. Select passenger names whose names start with character 'S'
 SELECT Passenger_name
